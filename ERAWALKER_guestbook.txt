@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERAWALKER - 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 스타 시티즌 배경 요소 -->
+    <div class="star-citizen-element sc-stars"></div>
+    <div class="spaceship"></div>
+    
+    <!-- 프로필 이미지 -->
+    <div class="profile-image" onclick="window.location.href='index.html'">
+        <img src="profile.jpg" alt="ERAWALKER 프로필">
+    </div>
+    
+    <header>
+        <div class="header-content">
+            <h1>ERAWALKER</h1>
+            <p>소방기술자 & 역사, 게임, AI 애호가</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">소개</a></li>
+            <li><a href="#skills">기술</a></li>
+            <li><a href="#interests">관심사</a></li>
+            <li><a href="#contact">연락처</a></li>
+            <li><a href="freeboard.html">자유게시판</a></li>
+            <li><a href="guestbook.html">방명록</a></li>
+            <li><a href="steam-deals.html">스팀 할인</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>소개</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>안녕하세요, 저는 <strong>ERAWALKER</strong>입니다. 소방기술자로 일하고 있으며, 안전한 환경을 만드는 데 열정을 가지고 있습니다.</p>
+                        <p>세계 역사, 게임, 인공지능 분야에 큰 관심을 가지고 있으며, 이러한 관심사를 통해 항상 새로운 지식을 습득하려 노력하고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>기술</h2>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <i class="fas fa-fire-extinguisher"></i>
+                        <h3>소방 기술</h3>
+                        <p>소방 시스템 설계 및 유지보수</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>안전 관리</h3>
+                        <p>건물 안전 진단 및 대책 수립</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>계획 수립</h3>
+                        <p>비상 대응 계획 수립 및 교육</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests" class="section">
+            <div class="container">
+                <h2>관심사</h2>
+                <div class="interests-container">
+                    <div class="interest-card">
+                        <i class="fas fa-landmark"></i>
+                        <h3>세계 역사</h3>
+                        <p>다양한 문명의 발전과 역사적 사건에 대한 연구</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>게임</h3>
+                        <p>전략 게임 및 RPG 게임 플레이</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>인공지능</h3>
+                        <p>AI 기술의 발전과 적용 사례 탐구</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>연락처</h2>
+                <div class="contact-info">
+                    <div class="contact-email">
+                        <i class="fas fa-envelope"></i>
+                        <h3>이메일</h3>
+                        <p><a href="mailto:bluenoble236@hotmail.com">bluenoble236@hotmail.com</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>메시지 보내기</h3>
+                    <form id="contactForm" action="mailto:bluenoble236@hotmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">메시지</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">보내기</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo"></div>
+            <p>&copy; 2023 ERAWALKER. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
